@@ -1,0 +1,428 @@
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+        body
+        {
+            box-sizing: border-box;
+            
+            padding: 0.2%;
+        }
+
+       /*LOGO*/ 
+        div.logo
+       {
+        position: absolute;
+        left:0.8%;
+        top:1.3%;
+        border: 1px solid black; 
+        height: 15%;
+        width: 15%; 
+       }
+
+       /*BUILDING IMAGE*/
+       div.build
+       {
+         position: absolute;
+         top:1.3%;
+         left:16%;
+         border: 1px solid black; 
+         height: 15%;
+         width: 83.2%;
+       }
+       img
+       {
+           height:100%;
+           width:100%;       
+       }
+
+       /*COLLAGE NAME*/
+       div.animate
+       {
+         position: absolute;  
+         border: 1px solid black; 
+         left:0.8%;
+         height:4%;
+         width: 98.5%;
+         top:16.7%;
+         vertical-align: middle; 
+         background-color: bisque; 
+       }
+       p.text-gradient
+       {
+       box-sizing: border-box;
+       position: absolute;
+        top:-110%;
+       width:100%;
+       font-size: 25px;
+       animation-name: my;
+       animation-duration: 7s;
+       animation-timing-function:linear;
+       animation-delay: 0s;
+       animation-iteration-count: infinite;
+       animation-direction:normal;
+       background:linear-gradient(70deg, red 0%, green 25%,  blue 50%, violet 75%, red 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+       }
+       @keyframes my
+       {
+       0% {left:0%}
+       25%{left:25%}
+       50%{left:50%}
+       75%{left:75%}
+       100%{left:100%}
+       }
+
+       /*MENU IN FORM OF BUTTONS*/
+       div.menu
+       {
+         position:absolute;
+         top:21.3%;
+         border: 1px solid black;
+         height:6%;
+         width:98.5%;
+         background:radial-gradient(circle,lightyellow,lightblue);
+         display:flex;
+         flex-direction:row;
+         justify-content:space-around;/*flex-start,flex-end,space-around*/
+         align-items:center;
+      
+       }
+       button.blok
+       {
+           position: relative;
+           display:inline-block;
+           left: 0%;
+           height:100%;
+           width: 10%;
+           top:0%;
+           border-radius: 5%;
+           text-align: center;
+           line-height:200%;
+           text-decoration: none;
+           background-color:burlywood;
+           text-transform: uppercase;
+           font-weight: bold;
+           text-shadow: 1px 1px gray;
+           transition-duration: 1s;
+       }
+       a
+       {
+         text-decoration: none;
+         color:black;
+       }
+       .blok:hover
+       {
+        background-color:gray;
+       }
+       a:hover
+       {
+       font-style:italic ;
+       color:white;
+       }
+
+      /*STUDENT CORNER___LEFT SIDE*/
+       div.left_corner
+       {
+         position: absolute;  
+         border:1px solid black;
+         height:85%;
+         left:0.8%;
+         top:28.1%;
+         width:19.8%;
+      /*   background-color:black; */
+       }
+      h2.sc
+      {
+        text-shadow: 0.5px 0.5px orangered;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        background-color: lightblue; 
+        padding-bottom: 2%;
+        padding-top: 2%;
+        
+      }
+      .reg
+      {
+        display: inline-block;
+        width:100%;
+        height:5.62%;
+      /*  padding: 1%;
+        margin-bottom: 1%;*/
+        background-color: lightgray;
+        text-align: left;
+        line-height: 6%;
+        vertical-align: middle;
+        font-size: 75%;
+
+      }
+      a.link
+      {
+        color:black;
+      }
+      a.link:hover
+      {
+       
+        font-weight: bold;
+      }
+      p.sp
+      {
+        position:relative;
+        display: inline-block;
+      }
+      
+      p.sp:hover
+      { 
+        animation: leftright 2s linear infinite;
+      }
+
+      @keyframes leftright
+      {
+        0%  { left: 0%; top: 0;}
+       100% { left: 10%; top: 0;}
+  
+      }
+      .reg:hover
+      {
+      box-shadow: 2px 3px blue;
+      }
+
+      /*MAIN BLOCK_MIDDLE ONE*/
+       div.middle_block
+       {
+         position: absolute;  
+         border: 1px solid black; 
+         height: 85%;
+         top:28.1%;
+         width:54.6%;
+         left:21%;
+         background-color:wheat;
+         background-image: url("c:/visual studio code/CSS/CW/bg.jpg");
+        /* opacity:0.5;*/
+       /*  text-align:center;*/
+         background-repeat: repeat;    
+       }
+       div.circular
+       {
+           position:relative;
+           animation:anicir 10s linear infinite;
+           color:red;
+       }
+       @keyframes anicir
+       {
+           0%{top:0%}
+           25%{top:4%}
+           50%{top:8%}
+           75%{top:12%}
+          100%{top:16%}
+       }
+       div.circular:hover
+       {
+           animation-play-state:paused;
+       }
+       ul.circ
+       {
+           padding:0%;
+           margin-left: 5%;
+
+       }
+       li
+       {
+           padding:0.7%;
+       }
+       /*EVENT CORNER_RIGHT MOST*/
+       div.right_corner
+       {
+         position: absolute;  
+         border: 1px solid black; 
+         height:85%;
+         top:28.1%;
+         width:23.3%;
+         left:76%;
+         background-color:lightyellow;
+         display: inherit;
+       }
+       h2.blink
+       {
+       animation: myblink 0.5s linear infinite;
+       color:red;
+       }
+       @keyframes myblink
+       {
+       from{opacity:0;}
+       to  {opacity:1;}
+       }
+       ul.admin
+       {
+         padding:4%;
+         margin-top: 2%;
+         margin-left: 3%;
+         color:blueviolet;
+         background:radial-gradient(20deg,lightpink lightyellow lightblue);
+
+       }
+       div.flex
+       {
+         display:flex;
+         flex-direction:row;
+         justify-content:space-around;/*flex-start,flex-end,space-around*/
+         align-items:center;
+         background-color:burlywood;
+         padding:2%;
+       }
+       /*FOOTER_BOTTOM OF THE SITE*/
+       div.footter
+       {
+         position: absolute;
+         left:0.5%;
+         height: 5%;
+         width: 99%;
+         background:radial-gradient(circle 400px at bottom,violet,indigo,blue,green,yellow,orange,red);
+         top:114%; 
+         text-align: center;
+         line-height: 0.8%; 
+         vertical-align: middle;
+         font-size: 120%;
+         opacity:0.3;   
+         border: 1px solid black; 
+       } 
+       p.foot
+       {
+        font-weight:bold;
+        transform: translate(40%,3300%);
+        font-size: 120%;
+       }    
+
+    </style>
+    <script type="text/JavaScript">
+       
+      function logIn()
+      {
+      document.getElementById("mdlblok").innerHTML='<object style="height:100%;width:100%;" type="text/html" data="login_ani.html"></object>';
+  //    document.getElementById("mdlblok").innerHTML='<iframe src="reg_form.html"></iframe>';
+      }
+
+
+        function regForm()
+        {
+        document.getElementById("mdlblok").innerHTML='<object style="height:100%;width:100%;" type="text/html" data="reg_form.html"></object>';
+    //    document.getElementById("mdlblok").innerHTML='<iframe src="reg_form.html"></iframe>';
+        }
+        function libReg()
+        {
+        document.getElementById("mdlblok").innerHTML='<object style="height:100%;width:100%;" type="text/html" data="lib_reg.html"></object>';
+    //    document.getElementById("mdlblok").innerHTML='<iframe src="reg_form.html"></iframe>';
+        }
+        function timeTable()
+        {
+        document.getElementById("mdlblok").innerHTML='<object style="height:100%;width:100%;" type="text/html" data="timetable.html"></object>';
+    //    document.getElementById("mdlblok").innerHTML='<iframe src="reg_form.html"></iframe>';
+        }
+        
+
+
+    
+    </script>
+    </head>
+    <body>
+       <div class="logo"><img src="logo.png"></div>
+       <div class="build"><img src="clg2.jpg"></div>  
+       <div class="animate"><p class="text-gradient"><b>Welcome to Central Insitute of Management sciences</p></div>
+       <div class="menu">
+            <button class="blok" style="cursor:crosshair"> <a href="#"> Home</a></button>
+            <button class="blok" style="cursor:grab"><a href="#">Branches</a></button>
+            <button class="blok" style="cursor:move"><a href="#">Gallery</a></button>
+            <button class="blok" style="cursor:copy"><a href="#">Recruit</a></button>
+            <button class="blok" style="cursor:wait"><a href="#">Admin</a></button>
+            <button class="blok" style="cursor:text"><a href="#">Fees</a></button>
+            <button class="blok" style="cursor:pointer"><a href="#">Result</a></button>
+            <button class="blok" style="cursor:zoom-in"><a href="#">About Us</a></button>
+            <button class="blok" style="cursor:zoom-out"><a href="#">Contact</a></button>
+            <button class="blok" style="cursor: help"><a href="#">Help</a></button>
+          </div>
+       <div class="left_corner">
+         <h2 class="sc" align="center">Student's Corner</h2>
+           <button class="reg" onclick="logIn();">
+           <a class=link href="#">SIGN IN<p class="sp">&nbsp;&nbsp;>></p></a></button>
+           <button class="reg" onclick="regForm();">
+           <a class=link href="#">STUDENT REGISTRATION<p class="sp">&nbsp;&nbsp;>></p></a></button>
+           <button class="reg" onclick="libReg();">
+           <a class=link href="#">LIBRARY REGISTRATION<p class="sp">&nbsp;&nbsp;>></p></a></button>
+           <button class="reg">
+           <a class=link href="#">CAMPUS INTERVIEW SCHEDULE<p class="sp">&nbsp;&nbsp;>></p></a></button>
+           <button class="reg">
+           <a class=link href="#">EXAMINATION SCHEDULE<p class="sp">&nbsp;&nbsp;>></p></a></button>
+           <button class="reg">
+           <a class=link href="#">INDUSRIAL VISIT SCHEDULE<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+           <a class=link href="#">SPORTS AND CULTURAL ACTIVITIY<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg"onclick="timeTable();" >
+           <a class=link href="#">TIME TABLE<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+           <a class=link href="#">ASSIGNMENTS<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+           <a class=link href="#"> DISCIPLINE COMMITEE RULES<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+           <a class=link href="#">UNIVERSITY UPDATION<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+            <a class=link href="#">SOCIAL ACTIVITIES<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+            <a class=link href="#">STUDENT CENTRAL COMMITEE<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+            <a class=link href="#">NEXT SEM ELIGIBILITY CRITERIA<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+            <a class=link href="#">STUDENTS QUERY<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+           <button class="reg">
+            <a class=link href="#">HOLIDAY LIST<p class="sp">&nbsp;&nbsp;>></p></a></button>                     
+                                                                  
+          </div>
+       <div id="mdlblok" class="middle_block">
+        <h2>Recent circulars </h2>
+        <div class="circular">
+            <ul class="circ">
+                <li><a href="anti-ragging-committee.pdf" style="color:red">Ani Regging Committe</a></li>
+                <li>Girls Hostel Admition Notice</li>
+                <li>Boys Hostel Admition Notice</li>
+                <li>Summer Challenge 2019</li>
+                <li>New Email Services </li>
+                <li>Reviced Weekly Test Timetable</li>
+                <li>GTU Exam TimeTable</li>
+                <li>TechFest 2019 Schedule</li>
+                <li>Techfest Registration</li>
+                <li>GTU Circular for Final Year Project Submition</li>
+                <li>Oral Exam Schedule</li>
+                <li>Second Year Result declared in May 2019</li>
+                <li>Third Year Result declared in May 2019</li>
+                <li>Final Year Result declared in May 2019</li>
+                <li>First Year A.T.K.T Result declared in May 2019</li>
+            </ul>
+        </div>
+
+       </div>
+      
+       <div class="right_corner">
+          <h2 class="sc" align="center">Media</h2>  
+          <h2 class="blink" align="center">Latest News</h2>
+          <h2 class="blink" align="center">Recent Circular</h2>
+          <h2 class="sc" align="center">Administration</h2> 
+          <ul class="admin"> 
+          <li>Complain Box</li> 
+          <li> Online Transcript</li>
+          <li>Admit card Distribution</li>
+          <li>Marksheet Distribution</li>
+          <li>Transportation</li>
+          <li>Hostel Facility</li>
+          <li>Online Payment</li>
+          </ul>
+          <h2 class="sc" align="center">Download</h2>
+         <div class="flex"> 
+           <a href="#"> E-books </a> 
+           <a href="#">Class-note </a>
+           <a href="#">Previous Exam Paper </a>
+          </div>
+       </div>
+       <div class="footter"></div>
+       <p class="foot">&copy;All Rights are Reserved</p>  
+    </body>
+</html>
